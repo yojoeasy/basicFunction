@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text editer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/97c1b17c44.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div class="container">
+    <div class="top">
+        <button id="undo"><i class="fa-solid fa-rotate-left"></i></button>
+        <button id="redo"><i class="fa-solid fa-rotate-right"></i></button>
+    </div>
+    <div class="mid">
+        <div id="mid1" draggable="true">hhhjjjjjjjggh
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="command">
+            <input id="textEnter" type="text" placeholder="Enter the text here">
+            <div class="font">
+                <button onclick="fontPlus()">+</button>
+                <button>Font Size</button>
+                <button onclick="fontMinus()">-</button>
+            </div>
+            <div class="other">
+                <button onclick="italic()"><i class="fa-solid fa-italic"></i></button>
+                <button onclick="bold()"><i class="fa-solid fa-bold"></i></button>
+                <button onclick="underLine()"><i class="fa-solid fa-underline"></i></button>
+            </div>
+        </div>
+        <div>
+            <Button onclick="add()">Add text</Button>
+        </div>
+    </div>
+   </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
